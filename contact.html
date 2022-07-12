@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <title>Contact Me</title>
+    </head>
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Contact</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-left">
+            <a href="index.html" class="nav-logo"><img src="assets/images/logo2.png" alt=""></a>
+            <a href="index.html" class="nav-list">Home</a>
+            <a href="myProjek.html" class="nav-list">My Projek</a>
+        </div>
+        <div class="nav-right">
+            <a href="contact.html"><button class="nav-button">Contact Me</button></a>
+        </div>
+    </nav>
+    <div class="contact">
+        <h1>Get In Touch</h1>
+        <form>
+            <div class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name">
+            </div>
+            <div class="contact-form">
+                <label for="email">E-mail</label>
+                <input type="text" id="email">
+            </div>
+            <div class="contact-form">
+                <label for="phone">Phone</label>
+                <input type="text" id="phone">
+            </div>
+            <div class="contact-form">
+                <label for="subject">Subject</label>
+                <select id="subject">
+                    <option hidden></option>
+                    <option>Let's Play</option>
+                    <option>Hello, We friend?</option>
+                    <option>I am wanted you</option>
+                </select>
+            </div>
+            <div class="contact-form">
+                <label for="message">Your Massage</label>
+                <textarea id="message"></textarea>
+            </div>
+            <div class="contact-button">
+                <button type="button" onclick="showData()">submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="assets/javascript/contact.js"></script>
+</body>
+</html>

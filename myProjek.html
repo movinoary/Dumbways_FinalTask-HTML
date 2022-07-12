@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>My Projek</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-left">
+        <a href="index.html" class="nav-logo"
+          ><img src="assets/images/logo2.png" alt=""
+        /></a>
+        <a href="index.html" class="nav-list">Home</a>
+        <a href="myProjek.html" class="nav-list">My Projek</a>
+      </div>
+      <div class="nav-right">
+        <a href="contact.html"
+          ><button class="nav-button">Contact Me</button></a
+        >
+      </div>
+    </nav>
+    <div class="myprojek">
+      <div class="myprojek-create">
+        <form onsubmit="addProject(event)">
+          <h1>add my project</h1>
+          <div class="myprojek-create-input-name">
+            <label for="input-myprojek-name">Project Name</label>
+            <input type="text" id="input-myprojek-name" />
+          </div>
+          <div class="myprojek-create-input-date">
+            <div class="start-date">
+              <label for="input-myprojek-date-start" -start>Start Date</label>
+              <input type="date" id="input-myprojek-date-start" />
+            </div>
+            <div class="end-date">
+              <label for="input-myprojek-date-end">End Date</label>
+              <input type="date" id="input-myprojek-date-end" />
+            </div>
+          </div>
+          <div class="myprojek-create-input-desc">
+            <label for="input-myprojek-description">Description</label>
+            <textarea id="input-myprojek-description"></textarea>
+          </div>
+          <div class="myprojek-create-input-tech">
+            <label class="tech-title" for="input-myprojek-technologies"
+              >Technologies</label
+            >
+            <div class="tec-col">
+              <div>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="checkbox"
+                    name="tech"
+                    value="fa-brands fa-node-js"
+                  />
+                  <label for="technologies-nodejs">Node Js</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="checkbox"
+                    name="tech"
+                    value="Next Js"
+                  />
+                  <label for="technologies-nextjs">Next Js</label>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="checkbox"
+                    name="tech"
+                    value="React Js"
+                  />
+                  <label for="technologies-reactjs">React Js</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="checkbox"
+                    name="tech"
+                    value="TypeScript"
+                  />
+                  <label for="technologies-typescript">TypeScript</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="myprojek-create-input-img">
+            <label for="input-myprojek-image">Upload Image</label>
+            <input type="file" id="input-myprojek-image" />
+          </div>
+          <div class="contact-button">
+            <button type="submit">submit</button>
+          </div>
+        </form>
+      </div>
+      <div class="myprojek-card">
+        <h1>My Project</h1>
+        <div class="myprojek-card-container" id="new-projek">
+          <div class="projek-card">
+            <a href="pageProjek.html">
+              <img src="./assets/images/blog.avif" alt="my-project" />
+              <h3>Dumbways Mobile App - 2021</h3>
+              <p class="projek-date">Durasi: 3 bulan</p>
+              <p class="projek-desc">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo,
+                maxime?
+              </p>
+              <div class="projek-card-icon">
+                <i class="fa-brands fa-node-js"></i>
+                <i class="fa-brands fa-react"></i>
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <div class="projek-card-button">
+                <button class="projek-button-edit">edit</button>
+                <button class="projek-button-delete">delete</button>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/javascript/myprojek.js"></script>
+  </body>
+</html>

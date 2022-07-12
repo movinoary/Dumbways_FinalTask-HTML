@@ -1,0 +1,515 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ----- Start Nav ----- */
+.nav {
+  background-color: #f4f3f3;
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 8vh;
+}
+
+.nav-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.nav-logo {
+  margin-right: 30px;
+}
+
+.nav-list {
+  text-decoration: none;
+  color: #000;
+  margin: 0 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.nav-right {
+  margin-right: 50px;
+}
+
+.nav-button {
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 5px 20px;
+  border-radius: 8px;
+  border: 1px solid #fff;
+  background-color: #0e0e0e;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.nav-button:hover {
+  color: #0e0e0e;
+  background-color: #e6e6e6;
+  border: 1px solid #0e0e0e;
+  transition: 1s;
+}
+/* ----- End Nav ----- */
+
+/* ----- Start Home ----- */
+.home {
+  background-color: #e4e7eb;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  width: 75%;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.home-desc {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-around;
+  margin-right: 50px;
+}
+
+.home-desc h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.home-desc P {
+  text-align: justify;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.home-desc-button {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+
+.button-contact {
+  padding: 3px 25px;
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #000;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+
+.button-contact a {
+  text-decoration: none;
+  color: #e6e6e6;
+}
+
+.button-cv {
+  padding: 5px 20px;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.home-desc-icon {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.button-social {
+  background-color: #000;
+  color: #f4f4f4;
+  font-size: 1.3rem;
+  margin: 5px 10px;
+  padding: 7px 8px;
+  text-decoration: none;
+  border-radius: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.facebook {
+  padding: 7px 10px;
+}
+
+.button-contact:hover,
+.button-contact a:hover,
+.button-social:hover {
+  background-color: #e4e7eb;
+  color: #0e0e0e;
+  transition: 0.3s ease all;
+}
+
+.home-card {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.home-card-image {
+  width: 350px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.home-card img {
+  border-radius: 10px 10px 0 0;
+  height: 370px;
+  width: 350px;
+}
+
+.home-card h1 {
+  font-size: 1.9rem;
+  margin-top: 5px;
+}
+
+.home-card p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+/* ----- End Home----- */
+
+/*---------- Start Contact ----------*/
+.contact {
+  background-color: #e4e7eb;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact form {
+  width: 30%;
+}
+
+.contact h1 {
+  font-size: 2.3rem;
+  margin: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contact-form {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.26);
+}
+.contact-form textarea {
+  height: 100px;
+  resize: none;
+}
+
+.contact-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact-button button {
+  background-color: #000;
+  color: #fff;
+  font-size: 1rem;
+  padding: 5px 30px;
+  border: 1px solid #000;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.4s ease-out;
+}
+
+.contact-button button:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  transition: all 1s ease-out;
+}
+/*---------- End Contact ----------*/
+
+/* ----- Start My Project ----- */
+.myprojek-create {
+  background-color: #e4e7eb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3% 5%;
+}
+
+.myprojek-create h1 {
+  font-size: 2.3rem;
+  margin: 30px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.myprojek-create-input-name input,
+.myprojek-create-input-date input,
+.myprojek-create-input-desc textarea,
+.myprojek-create-input-img input {
+  width: 100%;
+}
+.myprojek-create-input-desc textarea {
+  height: 100px;
+  resize: none;
+}
+
+.myprojek-create-input-name label,
+.myprojek-create-input-date label,
+.myprojek-create-input-desc label,
+.myprojek-create-input-img label,
+.tech-title {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.myprojek-create-input-name input,
+.myprojek-create-input-date input,
+.myprojek-create-input-desc textarea,
+.myprojek-create-input-img input,
+.myprojek-create-input-tech input {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.26);
+}
+
+.start-date {
+  margin-right: 20px;
+}
+.end-date {
+  margin-left: 20px;
+}
+
+.myprojek-create-input-date,
+.tec-col div {
+  display: flex;
+  flex-direction: row;
+}
+
+.tec-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.tec-col div {
+  width: 100%;
+}
+
+.tec-col label {
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
+/* ----- End My Project  ----- */
+
+/* ----- Start Project ----- */
+.myprojek-card {
+  background-color: #e6e6e6;
+  height: 100%;
+  padding: 5%;
+}
+
+.myprojek-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.myprojek-card h1 {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.projek-card {
+  margin: 1.3rem;
+  width: 300px;
+  height: 400px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.26);
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f3f3;
+  color: #000;
+}
+
+.projek-card a {
+  text-decoration: none;
+  color: #000;
+}
+
+.projek-card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.projek-card h3 {
+  margin-top: 5px;
+  font-size: 1.1rem;
+}
+
+.projek-date {
+  font-size: 0.8rem;
+  color: #a19e9e;
+}
+
+.projek-desc {
+  font-size: 0.9rem;
+  margin: 10px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.projek-card-icon {
+  display: flex;
+  color: #000;
+  font-size: 1.5rem;
+}
+
+.projek-card-icon i {
+  margin: 2px 5px;
+}
+
+.projek-card-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.projek-button-edit,
+.projek-button-delete {
+  margin: 10px 3px 0 3px;
+  color: #fff;
+  width: 100%;
+  background-color: #0e0e0e;
+  border: none;
+  border-radius: 7px;
+}
+/* ----- End  Project----- */
+
+/* ----- Start Page Projek ----- */
+.page-projek {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+  background-color: #e6e6e6;
+}
+
+.page-projek h1 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.page-projek-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.page-projek-header img {
+  width: 70%;
+  height: 500px;
+}
+
+.desc-header {
+  display: flex;
+  flex-direction: column;
+  width: 27%;
+}
+
+.desc-duration h3,
+.desc-technologies h3 {
+  margin: 30px 0 0 0;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.desc-duration p,
+.desc-technologies p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 10px;
+}
+
+.desc-duration p i,
+.desc-technologies p i {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.desc-tec-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.desc-technologies p {
+  width: 150px;
+}
+
+.page-projek-footer {
+  font-size: 1.2rem;
+  text-align: justify;
+  margin-top: 50px;
+}
+/* ----- End Page Projek ----- */
+
+/* ----- Start ----- */
+/* ----- End  ----- */
